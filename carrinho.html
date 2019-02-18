@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="font/font.css">
+    <link rel="stylesheet" href="css/style-produto.css">
+    <link rel="stylesheet" href="css/style-form.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/javascript.js"></script>
+    <script src="js/style.js"></script>
+    <title>Brechó Stuff</title>
+</head>
+<body>
+
+    <!-- MENU -->
+    <div class="conteudo-menu">
+        <div class="cabecalho">
+            <div class="entrar">
+                <h3> <a href="criar-conta.html"> Criar Conta</a> |</h3> 
+                <button class="btnentrar entrar-conta" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Iniciar Sessão</button>
+
+                <!-- iniciar button modal  -->
+
+                <div id="id01" class="modal">
+    
+                    <form class="modal-content animate" action="/action_page.php">
+                        <div class="imgcontainer">
+                            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                        </div>
+                    
+                        <div class="container">
+                            <label for="uname"><b>Username</b></label>
+                            <input type="text" placeholder="Enter Username" name="uname" required>
+                        
+                            <label for="psw"><b>Password</b></label>
+                            <input type="password" placeholder="Enter Password" name="psw" required>
+                                
+                            <button class="login" type="submit">Login</button>
+                        </div>
+                        <div class="checked">
+                            <label>
+                                <input type="checkbox" checked="checked" name="lembrar">Lembrar senha
+                            </label>
+                        </div>
+                    
+                        <div class="container" style="background-color:#f1f1f1">
+                            <span class="psw">Esquece a <a href="#">senha?</a></span>
+                            <a href="criar-conta.html">Criar Conta</a>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+            
+            <div class="box-menu">
+                <div class="menu-mobile">
+                    <span class="menu-burger"></span>
+                </div>
+                <ul id="menuTopo" class="menu">
+                    <li class="item-menu">
+                        <a href="produtos.html">Todos</a>
+                    </li>
+                    <li class="item-menu">
+                        <a href="produtos.html">Mom Jeans</a>
+                    </li>
+                    <li class="item-menu">
+                        <a href="produtos.html">Shorts</a>
+                    </li>
+                    <li class="item-menu">
+                        <a href="produtos.html">Blazers e Jaquetas</a>
+                    </li>
+                    <li class="item-menu">
+                        <a href="produtos.html">Saias e Vestidos</a>
+                    </li>
+                    <li class="item-menu">
+                        <a href="produtos.html">Top</a>
+                    </li>
+                    <li class="item-menu">
+                        <a href="produtos.html">Acessórios</a>
+                    </li>
+                    <li class="item-menu">
+                        <a href="produtos.html">Moda Praia</a>
+                    </li>
+                    <li class="item-menu">
+                        <a href="produtos.html">Skinny</a>
+                    </li>
+                    <li class="item-menu">
+                        <a href="faq.html">Sobre nós</a>
+                    </li>
+                </ul>
+            </div>             
+
+            <div class="top-nav">
+                <div class="search-container">
+                    <form action="/action_page.php">
+                        <input type="text" placeholder="Buscar" name="search">
+                        <button type="submit">
+                            <i>
+                                <img src="img/icones/search.png" alt="">
+                            </i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <p class="contato">contato@brechoarestuff.com.br</p>
+        </div>
+    </div>
+
+    <div class="menu-rapido">
+        <ul class="fast-menu">
+            <li class="logo">
+                <a href="home.html">
+                    <img src="img/logo/logo.png" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="produtos.html">90s</a>
+            </li>
+            <li>
+                <a href="produtos.html">Camisetas</a>
+            </li>
+            <li>
+                <a href="produtos.html">Acessórios</a>
+            </li>
+            <li>
+                <a href="carrinho.html">
+                    <img src="img/icones/cart.png" alt="">
+                </a>
+            </li>
+
+        </ul>
+    </div> 
+
+    
+    <h2 class="titulo-pagina"><span>Carrinho</span></h2>
+
+    <div class="tabela-compras-responsivo">
+        <div class="compras-responsivo">
+            <table id="comprar-responsivo">
+                <tr>
+                    <th>Produto: <span class="descricao-prodTabela">descrição do produto</span></th>
+                    <th class="trash"><img class="trash" src="img/icones/white-trash.png" alt=""></th>
+                </tr>
+                <tr>
+                    <td class="imagem-produto">
+                        <img class="compra-carrinho" src="https://dummyimage.com/100x80/000/fff" alt="">
+                    </td>
+                    
+                    <td>
+                        <span class="preco-carrinho">R$</span>25,00
+                    </td>
+                </tr>     
+
+            </table>
+        </div>
+    </div>
+
+
+    <div class="tabela-compras">
+        <div class="compras">
+            <table id="comprar">
+                <tr>
+                    <th>Produto</th>
+                    <th>Preço</th>
+                    <th>Subtotal</th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <td class="imagem-produto">
+                        <img class="compra-carrinho" src="https://dummyimage.com/100x80/000/fff" alt="">
+                        <p class="texto-carrinho">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                    </td>
+                    
+                    <td>
+                        <span class="preco-carrinho">R$</span>25,00
+                    </td>
+                    
+                    <td>
+                        <span class="subtotal-carrinho">R$</span>25,00
+                    </td>
+                    <td class="imagem-produto">
+                        <img class="trash" src="img/icones/trash.png" alt="">
+                    </td>
+                </tr>     
+            </table>
+        </div>   
+    </div>
+
+    <div class="continuar-comprando">
+        <a href="produtos.html">Continuar Comprando</a>
+    </div>  
+
+
+    <div class="conteudo-compras">
+        <div class="detalhe-produto">
+
+            <div class="valor-compra">
+                <p class="subtotal">Subtotal: <span class="valor">R$1400</span></p>
+                <p class="total">Total: <span class="valor">R$1400</span></p>
+            </div>
+
+            <div class="frete">
+                <div class="info-frete">
+                    <span style="width: 26px;"><img src="img/icones/truck.png" alt=""></span>
+                    <p class="frete-texto">Calcular Frete:</p>
+                </div>
+
+                <form class="form-inline" action="/action_page.php">
+                    <input type="number" id="frete" placeholder="Insira seu cep" name="cep">
+                </form>
+
+                <span class="border-frete"></span>
+
+                <div class="dropdown">
+                    <form action="">
+                        <input type="radio" name="retirada" value="retirar-no-local">
+                    </form>
+                        <span><img src="img/icones/house.png" alt=""></span>
+                        <p>Retirar no local</p>
+                        <span style="margin: -5px;"><img src="img/icones/arrow-down.png" alt=""></span>
+                    
+                    
+                    <div class="dropdown-content">
+                        <p class>A retirada para região de <span class="destaque-texto">São Paulo Capital</span> poderá ser feita nas estações do metrô <span class="destaque-texto">amarela, azul, verde e vermelha do metrô</span>, será cobrada <span class="destaque-texto"> taxa de R$4,30</span>.</p>
+                        <p>Combinar o local, horário e dia de entrega será feito pela <span class="destaque-texto">direct no instagram</span></p>
+                    </div>
+                    
+                </div>
+
+                <div class="calcular">
+                    <button type="submit">Calcular</button>
+                </div>
+                    
+            </div>
+                <div class="inicar-compra">
+                    <button type="submit">Iniciar Compra</button>
+                </div>
+            </div>
+        </div>
+
+    <!-- FOOTER -->
+
+    <div class="redes-sociais">
+        <div class="links">
+            <a  target="_blank" href="https://www.instagram.com/brechoarestuff/">
+                <img src="img/icones/insta.png" alt="">
+            </a>
+        </div>
+        <div class="links">
+            <a  target="_blank" href="https://www.facebook.com/brechostuff/">
+                <img src="img/icones/face.png" alt="">
+            </a>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer">
+            <ul class="footer-menu">
+                <h3>Minha Conta</h3>
+                <li class="footer">
+                    <a href="carrinho.html">Carrinho de Compras</a>
+                </li>
+                <li class="footer">
+                    <a href="finalizar-pedido.html">Finalizar pedidos</a>
+                </li>
+            </ul>
+            <ul class="footer-menu">
+                <h3>Informações</h3>
+                <li class="footer">
+                    <a href="faq.html">Quem Somos</a>
+                </li>
+                <li class="footer">
+                    <a href="faq.html#entregas">Formas de Envio</a>
+                </li>
+                <li class="footer">
+                    <a href="faq.html#perguntas">Perguntas Frequentes</a>
+                </li>
+                <li class="footer">
+                    <a href="faq.html#feedback">FeedBacks</a>
+                </li>
+            </ul>
+            <ul class="footer-menu">
+                <li class="footer">
+                    <a href="faq.html#seguranca">Política de Privacidade</a>
+                </li>
+                <li class="footer">
+                    <a href="faq.html#troca">Troca e devolução</a>
+                </li>
+                <li class="footer">
+                    <a href="faq.html#contato">Entre em contato</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    
+    <div class="footer-dois">
+        <p>@Brecho Stuff - Todos os direitos reservados</p>
+        <div class="info">
+            <img src="img/icones/email.png" alt="">
+            <a target="_blank" href="https://www.instagram.com/brechoarestuff/">
+                <img src="img/icones/insta.png" alt="">
+            </a>
+            <a target="_blank" href="https://www.facebook.com/brechoarestuff/">
+                <img src="img/icones/facebook.png" alt="">
+            </a>
+        </div>
+    </div>
+
+    
+</body>
+</html>

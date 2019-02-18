@@ -1,0 +1,716 @@
+
+.destaque-texto{
+    font-weight: bold;
+}
+
+.conteudo-menu{
+    background-color: #000;
+    height: 50%;
+}
+
+.conteudo-menu .cabecalho .entrar{
+    display: flex;
+    justify-content: row;
+    justify-content: flex-end;
+    padding: 3px 20px;
+}
+
+.conteudo-menu .cabecalho .entrar h3{
+    color: #ffffff;
+    font-size: 15px;
+    font-family: 'Noto Sans';
+    margin-top: 45px;
+    padding: 7px;
+}
+.conteudo-menu .cabecalho .entrar h3 + h3{
+    margin-left: -7px;
+}
+
+
+.conteudo-menu .cabecalho .entrar a{
+    color: #ffffff;
+}
+
+
+/* Menu Burguer */
+
+.box-menu{
+    padding-top: 30px;
+}
+
+.box-menu .menu-mobile{
+    display: block;
+    background-color: #bbb;
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99999;
+}
+
+.box-menu .menu-mobile .menu-burger{
+    display: block;
+    width: 30px;
+    height: 5px;
+    background-color: #000;
+    position: relative;
+    margin-left: 10px; 
+}
+
+.box-menu .menu-mobile .menu-burger::before{
+    content: '';
+    display: block;
+    width: 30px;
+    height: 5px;
+    background-color: #000;
+    position: absolute;
+    margin-left: 0;
+    bottom: -10px;  
+}
+
+.box-menu .menu-mobile .menu-burger::after{
+    content: '';
+    display: block;
+    width: 30px;
+    height: 5px;
+    background-color: #000;
+    position: absolute;
+    margin-left: 0;  
+    top: -10px;
+    z-index: 2;
+}
+
+.box-menu .menu{
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: #aaa;
+    padding: 20px 0;
+    flex-direction: column;
+    position:fixed;
+    width: 100%;
+    left: -100%;
+    top: 45px;
+    height: 100vh;
+    transition: left 2s;
+    z-index: 2;
+}
+
+.box-menu .menu.active{
+    left: 0;
+}
+
+.box-menu .menu .item-menu + .item-menu{
+    margin-top: 20px;  
+}
+
+.box-menu .menu .item-menu a{
+    color:#ffffff;
+    font-size: 20px;
+    margin: 20px;
+    text-decoration: none;
+}
+
+
+
+.top-nav{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -25px;
+}
+
+.top-nav input[type=text] {
+    padding: 8px 4px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+}
+
+.top-nav button{
+    border: 0; 
+    background: transparent
+}
+
+.conteudo-menu .cabecalho .contato{
+    display: flex;
+    justify-content: flex-end;
+    color: #ffffff;
+    font-size: 12px;  
+    font-family: 'Noto Sans';
+    padding: 15px;
+}
+
+/* MENU */
+
+.menu-rapido .fast-menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu-rapido .fast-menu .logo img{
+    width: 95px;
+    height: auto;
+}
+
+.menu-rapido .fast-menu a{
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 5px;
+}
+
+/* CAROUSEL */
+
+.carousel{
+    margin: 0 auto;
+}
+
+.carousel img{
+    width: 100%;
+    height: auto;   
+}
+
+/* BOX INFORMAÇÃO HOME */
+
+.box-informacao{
+    display: flex;
+    padding: 65px;
+}
+
+.box-informacao .informacao-home{
+    flex-wrap: wrap;   
+}
+
+.box-informacao .informacao-home .info{
+    display: flex;
+    align-items: center;
+}
+
+.box-informacao .informacao-home .info a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-family: 'Lobster';
+    color: #000;
+}
+
+.box-informacao .informacao-home .info + .info{
+    margin-top: 10px;
+}
+
+.box-informacao .informacao-home .info .icon img{
+    width: 38px;
+}
+
+.box-informacao .informacao-home .info .icon-recyclable{
+    width: 70px;   
+}
+
+.box-informacao .informacao-home .info .icon-card{
+    width: 81px;
+      
+}
+
+.box-informacao .informacao-home .info .icon-plane{
+    width: 81px;
+       
+}
+
+.box-informacao .informacao-home .info .icon-insta{
+    width: 98px;
+      
+}
+
+.box-informacao .informacao-home .info .icon-recyclable img{
+    width: 38px;
+}
+
+.box-informacao .informacao-home .info .icon-card img{
+    width: 38px; 
+}
+
+.box-informacao .informacao-home .info .icon-plane img{
+    width: 38px; 
+}
+
+.box-informacao .informacao-home .info .icon-insta img{
+    width: 38px;    
+}
+
+.box-informacao .informacao-home .zoom{
+
+    transition: transform .2s;
+    margin: 0 auto;
+}
+
+.zoom:hover {
+    -ms-transform: scale(1.1); /* IE 9 */
+    -webkit-transform: scale(1.1); /* Safari 3-8 */
+    transform: scale(1.1); 
+  }
+
+/* titulo das páginas */
+
+h2 {
+    font-size: 30px;
+    font-family: 'Lobster';
+    margin-top: 30px;
+    text-align: center;
+    text-transform: uppercase;
+}
+h2.titulo-pagina {
+    position: relative;
+    z-index: 1;
+}
+h2.titulo-pagina:before {
+    border-top: 2px solid #dfdfdf;
+    content: "";
+    margin: 0 auto;
+    position: absolute;
+    top: 40%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 95%;
+    z-index: -1;
+}
+h2.titulo-pagina span {
+    background: #fff;
+    padding: 0 15px;
+
+}
+
+/* fim titulo das páginas */
+
+
+.titulo-destaques h1{
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    font-size: 20px;
+    font-family: 'Lobster';
+}
+
+.box-produto{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.box-produto .produto{
+    padding: 0 0 45px;
+}
+
+.box-produto .produto img{
+    width: 100%;
+    height: auto;
+}
+
+.box-produto .produto .informacao-produto{
+    padding: 15px;
+}
+
+.box-produto .produto .informacao-produto h1{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-family: 'Noto Sans';
+    font-size: 20px;
+    color: #000;
+}
+
+.box-produto .produto .informacao-produto p{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-family: 'Noto Sans';
+    color: #000;
+    padding: 0 0 15px;
+}
+
+.box-produto .produto .informacao-produto h1 + p{
+    margin-top: 20px;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    margin-top: -70px;
+}
+
+.button-produtos{
+    background-color: #000;
+    border: none;
+    padding: 5px 17px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.button-produtos a{
+    color: #ffffff;
+    font-size: 15px;
+    font-family: 'Noto Sans';
+}
+
+/* feed instagram fotos */
+
+.titulo-instagram h1{
+    display: flex;
+    padding: 10px;
+    font-size: 18px;
+    font-family: 'Lobster';
+}
+
+.img-featured-container {
+  overflow: hidden;
+  position: relative;
+}
+
+.img-featured-container img {
+  width: 100%;
+}
+
+.img-featured-container .img-backdrop {
+  background: linear-gradient(135deg, rgba(139, 142, 173, 0.959), rgba(255, 255, 255, 0.85));
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.img-featured-container:hover > .img-backdrop {
+  opacity: 1;
+}
+
+.img-featured-container .description-container {
+  color: #fff;
+  font-size: 16px;
+  line-height: 1.2;
+  padding: 0 30px;
+  text-align: center;
+  line-height: 20px;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  z-index: 2;
+  opacity: 0;
+  transition: all .2s ease;
+}
+
+.img-featured-container .description-container .fa-instagram {
+  font-size: 40px;
+}
+
+.img-featured-container .description-container p {
+  font-weight: 300;
+  margin-bottom: 0;
+}
+
+.img-featured-container:hover .description-container {
+  opacity: 1;
+}
+
+.img-featured-container .description-container .caption {
+  display: none;
+  margin-bottom: 10px;
+}
+
+.img-featured-container .description-container .likes,
+.img-featured-container .description-container .comments {
+  margin: 0 5px;
+}
+
+#btn-instafeed-load {
+  color: #fff;
+  background: #26a3ff;
+  margin: 20px auto;
+  padding: 8px 12px;
+  display: block;
+  border: none;
+}
+
+
+.redes-sociais{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+footer{
+    padding: 40px 0 0;
+}
+
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #000;
+    padding: 4px 20px;
+}
+
+.footer .footer-menu{
+    font-family: 'Noto Sans';
+    font-size: 12px;
+    color: #ffffff;
+    padding: 40px 0;
+}
+
+.footer .footer-menu h3{
+    font-size: 14px;
+    padding: 0 20px;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+.footer .footer-menu a{
+    color: #ffffff;
+    line-height: 25px;
+}
+
+.footer-dois{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer-dois p{
+    font-size: 10px;
+    font-family: 'Noto Sans';
+    padding: 10px 5px;
+}
+
+.footer-dois img{
+    width: 16px;
+    height: auto;
+}
+
+.footer-dois .info{
+    font-size: 9px;
+    font-family: 'Noto Sans';
+    padding: 10px 5px;
+}
+
+
+
+
+@media(min-width: 576px){
+    .top-nav input[type=text]{
+        padding: 8px 75px;
+    }
+
+    .menu-rapido .fast-menu a{
+        font-size: 17px;
+    }
+
+    .box-informacao{
+        padding: 25px;
+    }
+
+    .titulo-instagram h1{
+        font-size: 21px;
+        padding: 18px;
+    }
+
+    .box-informacao .informacao-home{
+        display: flex;
+        flex-direction: row;
+    }
+
+}
+
+@media(min-width:768px){
+
+    .img-featured-container .description-container .caption {
+        display: block;
+    }
+
+    .top-nav input[type=text]{
+        padding: 8px 90px;
+    }
+
+    .conteudo-menu .cabecalho .search-container{
+        padding: 0 34px;
+    }
+
+
+    .conteudo-menu .cabecalho .entrar{
+        padding: 12px 80px;
+    }
+
+    .conteudo-menu .contato{
+        padding: 20px 73px;
+    }
+
+    .box-informacao{
+        padding: 34px;
+    }
+
+    .box-informacao .informacao-home{
+        display: flex;
+        justify-content: center;
+    }
+
+    .box-produto .produto{
+        text-align: center;        
+    }
+
+    .box-produto .produto img{
+        width: 60%;
+        height: auto;;
+    }
+
+}
+
+@media(min-width:992px){
+
+    .top-nav input[type=text]{
+        padding: 8px 90px;
+    }
+
+
+    .conteudo-menu .cabecalho .search-container{
+        padding: 0 31px;
+        margin-top: -120px;
+    }
+
+    .conteudo-menu .cabecalho .contato{
+        font-size: 15px;
+        margin-top: 17px;
+    }
+
+    .titulo-destaques h1{
+        font-size:32px;
+    }
+
+    .box-produto .produto .informacao-produto h1{
+        font-size: 21px;
+    }
+    .box-menu{
+        padding-top: 0;
+    }
+
+    .box-menu .menu-mobile{
+        display: none;   
+    }
+    
+    .box-menu .menu{
+      flex-direction: row;
+      position: initial;
+      top: 0;
+      left:0;
+      justify-content: center;
+      height: auto;
+    }
+
+    .box-menu .menu .item-menu a{
+        margin:15px;
+        font-size: 16px;
+    }
+
+    .box-menu .menu .item-menu a{
+        color: #ffffff;
+        text-decoration: none;
+    }
+
+    .box-menu .menu .item-menu + .item-menu{
+        margin-top: 0;  
+    }
+
+    .menu-rapido .fast-menu .logo img{
+        width: 130px;
+        height: auto;
+    }
+
+    .menu-rapido .fast-menu a{
+        font-size: 24px;
+    }
+
+    .box-produto{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .box-produto .produto img{
+        width: 85%;
+        height: auto;
+    }
+
+    .box-informacao{
+        display: flex;
+        justify-content: center;
+    }
+
+    .box-informacao .informacao-home .titulo{
+        font-size: 18px;
+    }
+
+    .box-informacao .informacao-home .info{
+        padding: 15px;
+    }
+
+  
+
+    .box-informacao .informacao-home .info .icon-recyclable{
+        width: 43px;
+    }
+
+    .box-informacao .informacao-home .info .icon-card{
+        width: 43px;
+    }
+
+    .box-informacao .informacao-home .info .icon-plane{
+        width: 43px;
+    }
+
+    .box-informacao .informacao-home .info .icon-insta{
+        width: 43px;
+    }
+
+}
+
+@media(min-width:1200px){
+    .box-produto{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .box-informacao .informacao-home .titulo{
+        font-size: 20px;
+    }
+    .box-produto .produto .informacao-produto p{
+        font-size: 15px;
+    }
+}
+
+
+a{
+    text-decoration: none;
+    font-family: 'Noto Sans';
+}
+
+
+p, a{
+    font-family: 'Noto Sans';
+}
+
+
+
+
+

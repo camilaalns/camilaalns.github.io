@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="font/font.css">
+    <link rel="stylesheet" href="css/style-faq.css">
+    <link rel="stylesheet" href="css/style-form.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/javascript.js"></script>
+    <script  src="js/scroll.js"></script>
+    <script src="js/style.js"></script>
+     <!-- main-->
+     <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <title>Stuff Brechó</title>
+</head>
+<body>
+
+        <!-- MENU -->
+
+    <div class="conteudo-menu">
+        <div class="cabecalho">
+            <div class="entrar">
+                <h3> <a href="criar-conta.html"> Criar Conta</a> |</h3> 
+                <button class="btnentrar entrar-conta" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Iniciar Sessão</button>
+
+                <!-- iniciar button modal  -->
+
+                <div id="id01" class="modal">
+    
+                    <form class="modal-content animate" action="/action_page.php">
+                        <div class="imgcontainer">
+                            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                        </div>
+                    
+                        <div class="container">
+                            <label for="uname"><b>Login:</b></label>
+                            <input type="text" placeholder="Seu Login" name="uname" required>
+                        
+                            <label for="psw"><b>Senha:</b></label>
+                            <input type="password" placeholder="Sua Senha" name="psw" required>
+                                
+                            <button class="login" type="submit">Login</button>
+                        </div>
+                        <div class="checked">
+                            <label>
+                                <input type="checkbox" checked="checked" name="lembrar">Lembrar senha
+                            </label>
+                        </div>
+                    
+                        <div class="container" style="background-color:#f1f1f1">
+                            <span class="psw">Esquece a <a href="#">senha?</a></span>
+                            <a href="criar-conta.html">Criar Conta</a>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+            
+            <div class="box-menu">
+                <div class="menu-mobile">
+                    <span class="menu-burger"></span>
+                </div>
+                <ul id="menuTopo" class="menu">
+                    <li class="item-menu">
+                        <a href="produtos.html">Todos</a>
+                    </li>
+                    <li class="item-menu">
+                        <a href="produtos.html">Mom Jeans</a>
+                    </li>
+                    <li class="item-menu">
+                        <a href="produtos.html">Shorts</a>
+                    </li>
+                    <li class="item-menu">
+                        <a href="produtos.html">Blazers e Jaquetas</a>
+                    </li>
+                    <li class="item-menu">
+                        <a href="produtos.html">Saias e Vestidos</a>
+                    </li>
+                    <li class="item-menu">
+                        <a href="produtos.html">Top</a>
+                    </li>
+                    <li class="item-menu">
+                        <a href="produtos.html">Acessórios</a>
+                    </li>
+                    <li class="item-menu">
+                        <a href="produtos.html">Moda Praia</a>
+                    </li>
+                    <li class="item-menu">
+                        <a href="produtos.html">Skinny</a>
+                    </li>
+                    <li class="item-menu">
+                        <a href="faq.html">Sobre nós</a>
+                    </li>
+                </ul>
+            </div>             
+
+            <div class="top-nav">
+                <div class="search-container">
+                    <form action="/action_page.php">
+                        <input type="text" placeholder="Buscar" name="search">
+                        <button type="submit">
+                            <i>
+                                <img src="img/icones/search.png" alt="">
+                            </i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <p class="contato">contato@brechoarestuff.com.br</p>
+        </div>
+    </div>
+
+    <div class="menu-rapido">
+        <ul class="fast-menu">
+            <li class="logo">
+                <a href="home.html">
+                    <img src="img/logo/logo.png" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="produtos.html">90s</a>
+            </li>
+            <li>
+                <a href="produtos.html">Camisetas</a>
+            </li>
+            <li>
+                <a href="produtos.html">Acessórios</a>
+            </li>
+            <li>
+                <a href="carrinho.html">
+                    <img src="img/icones/cart.png" alt="">
+                </a>
+            </li>
+
+        </ul>
+    </div> 
+
+    
+    <h2 class="titulo-pagina"><span>Sobre nós e moda sustentável</span></h2>
+
+
+    <div class="main">
+
+        <div class="menuleft">
+            <ul>
+                <li>
+                    <a class="link1" href="">O Brechó</a>
+                </li>
+                <li>
+                    <a class="link2" href="">Sobre mim</a>
+                </li>
+                <li>
+                    <a class="link3" href="">Curadoria</a>
+                </li>
+                <li>
+                    <a class="link4" href="">Brechó e o consumo consciênte</a>
+                </li>
+                <li>
+                    <a class="link5" href="">Compre com Segurança</a>
+                </li>
+                <li>
+                    <a class="link6" href="">Envios</a>
+                </li>
+                <li>
+                    <a class="link7" href="">Politica de troca e devolução</a>
+                </li>
+                <li>
+                    <a class="link8" href="">Perguntas Frequentes</a>
+                </li>
+                <li>
+                    <a class="link9" href="">FeedBacks</a>
+                </li>
+                <li>
+                    <a class="link10" href="">Contatos</a>
+                </li>
+            </ul>
+        </div>
+
+
+        <div class="content-right">
+            <div class="sobre-empresa">
+                <div class="o-brecho">
+                    <div class="brecho">
+                        <h1 id="obrecho">O brecho</h1>
+                    </div>
+                    <p class="texto">Criado em novembro de 2018, com o objetivo de trazer moda sustentável e preços acessíveis.</p>
+                </div>
+
+                <div class="o-brecho">
+                    <div id="scroll-sobreMim">
+                        <h1 id="sobremim">Sobre mim</h1>
+                    </div>
+                    <div class="box-sobre-mim">
+                        <div class="foto">
+                            <img src="img/sobre/eu.jpg" alt="">
+                        </div>
+                        <p class="texto">Me chamo Camila, nascida em 1997 em São Paulo-SP. Sou apaixonada por moda e tecnologia, formada em análise e desenvolvimento de sistemas, eu sei, o nome desse curso é muito grande. Sou adepta a brechós desde 2015, mas desde 2018 comecei a consumir brechós e bazares pensando na moda sustentável e consumo consciente, onde falo um pouco aqui.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="o-brecho">
+                    <h1 id="curadoria">Curadoria</h1>
+                    <p class="texto">Garimpo todas as peças com muito carinho, escolho cada peça individualmente com todo cuidado para trazer a melhor qualidade.  São todas higienizadas, passadas,
+        fotogradas, passa por análise de preço e então embaladas.</p>
+                    <p class="texto">Me dedico a garimpar peças atemporais e vintages, busco trabalhar com preços justos e acessíveis.</p>
+                    <p class="texto-bold">Sou muito grata a todos vocês que estão fazendo isso acontecer.</p>
+                </div>
+
+                <div class="o-brecho" id="sustentavel" >
+                    <div id="scroll-sustentavel">
+                        <h1 id="consumoconsciente">Brechó e o consumo consciênte</h1>
+                    </div>
+                    <div class="foto">
+                        <img src="img/sobre/earth.jpg" alt="">
+                    </div>
+                    <p class="texto-bold-italic">  A moda é incrível, mas também pode ser cruel.</p>
+                    <h3>Porque comprar em Brechó?</h3>
+                    <p class="texto">É uma forma de contribuir com a redução da quantidade de poluentes usados na fabricação dos produtos e minimizando a retirada de
+        matérias-primas da natureza.</p>
+                    <p class="texto">Ao comprar em Brechós você está comprando roupas que já foram fabricadas e ainda estão na sua vida útil, faz com que esta peça continue sendo usada e não se torne lixo, além de evitar comprar de marcas e empresas que utilizam mão de obra escrava, <span class="destaque-texto">incentiva a diminuição de produção de roupas, a produção desenfreada causa sérios impactos ambientais</span>, por exemplo, para a confecção de UMA calça jeans são gastos 11 MIL litros de água. O setor é responsável pela emissão de <span class="destaque-texto">1,2 bilhão de toneladas de gases de efeito estufa</span> por ano, 500 bilhões de dólares são jogados fora com roupas que foram pouquíssimo usadas e que quase nunca são recicladas.</p>
+                    <span class="link-creditos"><p class="texto"><a target="_blank" href="(fonte:https://www.ellenmacarthurfoundation.org/publications/a-new-textiles-economy-redesigning-fashions-future)">Fonte: Relatório pela pela Ellen MacArthur Foundation</a></p></span>
+                    <p class="texto">Você pode achar peças incríveis, vintages e legítimas, além do preço ser super amigável. Assuma uma moda mais consciente.</p>
+                </div>
+            </div>
+
+            <div class="box-overlay">
+                <div class="moda-sustentavel">
+                    <img src="img/sobre/sustentabilidade-01.jpg" alt="img" class="image">
+                        <input type="image" src="img/icones/plus.png" class="plus" >
+                    <div class="overlay">
+                        <div class="text">
+                            <p>Você já parou para pensar quem está por trás daquela roupa linda que você viu na loja? Já parou para pensar qual processo aquela peça passou até chegar naquela loja? Já refletiu em qual estado a mão de obra que fez aquela peça está?</p></br>
+                            <p>Moda, trabalho escravo, exploração infantil, tráfico de adultos e crianças têm algo muito em comum, é dessa forma que alimenta-se grandes redes de fast fashion das quais somos clientes.</p></br>
+                            <p>Submetidos a uma jornada de até 20 horas, espaços pequenos, sujos, quente e ameaças para evitar fugitivos em troca de um prato de comida ou alguns trocados, condições análogas à escravidão, dessa forma é produzida aquela peça linda na sua loja preferida. </p></br>
+                            <p>Então como faço para não contribuir com essa indústria?</p></br>
+                            <p>Brechós são uma forma incrível de desincentivar esse mercado tão desumano, além de evitar impactos ambientais. </p></br>
+                            <p>Valorize pequenas empresas e sua mão de obra, assim como nós esperamos que valorizem o nosso trabalho, porque menosprezamos o trabalho de um estilista, design e de uma costureira? É trabalhoso e exige estudos, e isso tem preço. </p></br>
+                            <p>Questione sempre a loja quem fez suas roupas, é um direito seu.</p></br>
+                            <p>Existe um site que gerou esse movimento “who made your clothes” link para mais informações <span class="link-creditos"><a href="https://www.fashionrevolution.org/south-america/brazil/"> clicando aqui </a></span></p>
+
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="moda-sustentavel">
+                    <img src="img/sobre/sustentabilidade-02.jpg" alt="img" class="image">
+                        <input type="image" src="img/icones/plus.png" class="plus" >
+                    <div class="overlay">
+                        <div class="text">
+                            <p>Como questionado no texto anterior “who made your clothes” é muito importante valorizarmos a mão de obra, pois tudo tem estudos e trabalho e consequentemente um preço.</p></br>
+                            <p>Você só acha caro uma blusa de R$50,00 porque você acha necessário ter 10 blusas, mas mais é menos. Quando qualidade é um detalhe e o preço é que importa, acabamos nos precipitando e comprando 2 blusas de R$20,00 que talvez na primeira lavagem perca cor ou relaxe, você gastou R$40,00 em duas blusas que duraram uma semana, talvez 3 meses, ou seja, não pensamos a longo prazo, somos imediatistas e impulsivos.</p></br>
+                            <p>Produto ruim significa geração de maior quantidade de lixo, e isto provoca mais danos ao meio ambiente, lembrando que a indústria têxtil é a segunda maior poluente no mundo, comprar produto de qualidade é aderir a moda sustentável.</p></br>
+                            <p>É necessário apenas ter peças básicas e atemporais de boa qualidade, que ficaram incríveis com todo look!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="moda-sustentavel">
+                    <img src="img/sobre/sustentabilidade-03.jpg" alt="img" class="image">
+                        <input type="image" src="img/icones/plus.png" class="plus" >
+                    <div class="overlay">
+                        <div class="text">
+                            <p>“Slow Fashion é um movimento que une a responsabilidade social e ambiental, em contraponto ao Fast Fashion, meio de produção utilizado pelas grandes marcas. O Slow Fashion busca o respeito às condições de trabalho de quem está envolvido, visando toda a cadeia de produção e o meio-ambiente.</p></br>
+                            <p>O objetivo final é o consumo consciente: roupas que tenham um motivo para serem produzidas e usadas, que tenham qualidade e grande durabilidade. Desse modo, o Slow Fashion é a oposição ao consumismo desenfreado.”</p></br>
+                            <span class="link-creditos"><p><a target="_blank" href="https://www.todafrida.com.br/slow-fashion"> todafrida.com.br </a></p></span</br>
+                            <p>O slow fashion visa:</p></br>
+                            <ul>
+                                <li>Diminuir o consumo desenfreado.</li>
+                                <li>Encoraja e reconhece modelos de negócios diversos, como: designers independentes, cooperativas,  brechós, materiais reciclados, aluguel e troca de roupas.</li>
+                                <li>Valoriza o trabalho todos os envolvidos na cadeia produtiva.</li>
+                                <li>Prioriza e valoriza o desenvolvimento de pequenos negócios e profissionais locais, gera um impacto ambiental menor, fortalece a economia local e enriquece as comunidades.</li>
+                                <li>Incentivar o design clássico ao invés de tendências passageira, contribuindo para a longevidade das roupas.</li>
+                                <li>Os preços são muitas vezes maiores porque incorporam recursos sustentáveis e salários justos que refletem no valor real de cada peça. Mas uma roupa de qualidade e atemporal durará muito mais, passando a ser um investimento que vale a pena.</li>
+                            </ul>
+                            <p>Neste texto me inspirei neste site linkado aqui, e resumi as informações. <span class="link-creditos"><a target="_blank" href="http://slowdownfashion.com.br/2016/04/27/conheca-os-10-valores-do-slow-fashion/">(slowdownfashion.com.br)</a></span> </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sobre-empresa" id="seguranca">
+                <div class="o-brecho">
+                    <div id="scroll-seguranca">
+                        <h1 id="textoSeguranca">Compre com Segurança</h1>
+                    </div>
+                    <div class="foto">
+                        <img src="img/sobre/Compre-com-Segurança.jpg" alt="">
+                    </div>
+                    <p class="texto">Temos o compromisso com a privacidade e a segurança durante todo o processo de navegação e compra pelo site. Os dados cadastrais não são vendidos, trocados ou divulgados para terceiros, exceto quando essas informações são necessárias para o processo de entrega ou para cobrança.</p>
+                    <p class="texto">Para que estes dados permaneçam intactos, nós desaconselhamos expressamente a divulgação de sua senha a terceiros, mesmo a amigos e parentes.</p>
+                    <div class="foto">
+                        <img src="img/sobre/Compre-com-Segurança-PagSeguro.png" alt="">
+                    </div>
+                </div>
+
+                <div class="o-brecho" id="entregas">
+                    <div id="scroll-entregas">
+                        <h1 id="envio">Envios</h1>
+                    </div>
+                    <div class="foto">
+                        <img src="img/sobre/package.jpg" alt="">
+                    </div>
+                    <h1 class="text-envio">São Paulo - Capital</h1>
+                    <p class="texto">A entrega para região de <span class="destaque-texto">São Paulo Capital</span> poderá ser feita nas <span class="destaque-texto">estações do metrô linhas amarela, azul, verde e vermelha</span> do metrô, será cobrado <span class="destaque-texto">taxa de R$4,30</span>.</p>
+                    <p class="texto">O encontro é feito na catraca do metrô e é necessário combinar via DM pelo instagram</p>
+                    <h1 class="text-envio">Envio para todo Brasil</h1>
+                    <p class="texto"> O envio do pedido é feito via pac ou sedex, o calculo é feito automaticamente pelo sistema do correio com o cep, portanto é necessário nos enviar seu CEP via DM (instagram) para realizarmos o cálculo. O código de rastreamento é enviado por email assim que o produto é postado nos correios para o cliente. Assim os clientes poderão rastrear seus pedidos pelo site do correio e acompanhar a entrega. Portanto, <span class="destaque-texto">cadastre seu email corretamente para receber nossas atualizações</span>.</p>
+                </div>
+
+                <div class="o-brecho">
+                    <div id="scroll-troca">
+                        <h1 id="troca">Políticas de troca e devolução</h1>
+                    </div>
+                    <div class="foto">
+                        <img src="img/sobre/troca-devolucao.jpg" alt="">
+                    </div>
+                    <p class="texto">Leia com atenção as políticas de troca e devolução referente aos produtos da loja Brechó Stuf</p>
+                </div>
+
+                <div class="o-brecho">
+                    <div id="scroll-perguntas">
+                        <h1 id="perguntas">Perguntas Frequentes</h1>
+                    </div>
+                    <p class="pergunta">1 -Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                    <p class="resposta">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="o-brecho">
+                    <div id="scroll-feedback">
+                        <h1 id="feedbacks">FeedBacks</h1>
+                    </div>
+                    <p class="texto"> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+
+                <div class="o-brecho">
+                    <div id="scroll-contato">
+                        <h1 id="contato">Contato</h1>
+                    </div>
+                    <div class="contato">
+                        <a  target="_blank" href="https://mail.google.com/mail/u/0/">
+                            <img src="img/icones/big-email.png" alt="">
+                            <p class="texto">contato@brechoarestuff.com.br</p>
+                        </a>
+                        <a  target="_blank" href="https://www.instagram.com/brechoarestuff/">
+                            <img src="img/icones/insta.png" alt="">
+                            <p class="texto">DM Instagram</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="stop" class="scrollTop">
+                <span><a href="">Top</a></span>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+            <div class="footer">
+                <ul class="footer-menu">
+                    <h3>Minha Conta</h3>
+                    <li class="footer">
+                        <a href="carrinho.html">Carrinho de Compras</a>
+                    </li>
+                    <li class="footer">
+                        <a href="finalizar-pedido.html">Finalizar pedidos</a>
+                    </li>
+                </ul>
+                <ul class="footer-menu">
+                    <h3>Informações</h3>
+                    <li class="footer">
+                        <a href="faq.html">Quem Somos</a>
+                    </li>
+                    <li class="footer">
+                        <a href="faq.html#entregas">Formas de Envio</a>
+                    </li>
+                    <li class="footer">
+                        <a href="faq.html#perguntas">Perguntas Frequentes</a>
+                    </li>
+                    <li class="footer">
+                        <a href="faq.html#feedback">FeedBacks</a>
+                    </li>
+                </ul>
+                <ul class="footer-menu">
+                    <li class="footer">
+                        <a href="faq.html#seguranca">Política de Privacidade</a>
+                    </li>
+                    <li class="footer">
+                        <a href="faq.html#troca">Troca e devolução</a>
+                    </li>
+                    <li class="footer">
+                        <a href="faq.html#contato">Entre em contato</a>
+                    </li>
+                </ul>
+            </div>
+    </footer>
+    
+    <div class="footer-dois">
+        <p>@Brecho Stuff - Todos os direitos reservados</p>
+        <div class="info">
+            <img src="img/icones/email.png" alt="">
+            <a target="_blank" href="https://www.instagram.com/brechoarestuff/">
+                <img src="img/icones/insta.png" alt="">
+            </a>
+            <a target="_blank" href="https://www.facebook.com/brechoarestuff/">
+                <img src="img/icones/facebook.png" alt="">
+            </a>
+        </div>
+    </div>
+    
+        
+</body>
+</html>

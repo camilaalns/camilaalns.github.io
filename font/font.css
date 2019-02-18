@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'Noto Sans';
+    src: url('NotoSans-Regular.eot');
+    src: url('NotoSans-Regular.eot?#iefix') format('embedded-opentype'),
+        url('NotoSans-Regular.woff2') format('woff2'),
+        url('NotoSans-Regular.woff') format('woff'),
+        url('NotoSans-Regular.ttf') format('truetype'),
+        url('NotoSans-Regular.svg#NotoSans-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lobster';
+    src: url('subset-Lobster-Regular.eot');
+    src: url('subset-Lobster-Regular.eot?#iefix') format('embedded-opentype'),
+        url('subset-Lobster-Regular.woff2') format('woff2'),
+        url('subset-Lobster-Regular.woff') format('woff'),
+        url('subset-Lobster-Regular.ttf') format('truetype'),
+        url('subset-Lobster-Regular.svg#Lobster-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}

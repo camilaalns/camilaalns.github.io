@@ -1,0 +1,232 @@
+
+/* Full-width input fields */
+
+.conteudo-menu .cabecalho .entrar .modal .container input{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  /* Set a style for all buttons */
+  .conteudo-menu .cabecalho .entrar button {
+    border: none;
+    background-color: inherit;
+    padding: 0;
+    font-size: 14px;
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 45px;
+  }
+
+  .entrar-conta {
+      color: #ffffff;
+    }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  /* Extra styles for the cancel button */
+
+
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+  
+.container {
+    padding: 16px;
+    font-family: 'Noto Sans';
+    font-size: 15px;
+}
+
+
+.conteudo-menu .cabecalho .entrar .modal .container button{
+    background-color: #000;
+    border: none;
+    color: white;
+    padding: 5px 17px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    font-family: 'Noto Sans';
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 100%;
+    
+}
+  
+span.psw {
+    float: right;
+    font-size: 15px;
+    font-family: 'Noto Sans';
+}
+
+.conteudo-menu .cabecalho .entrar .modal .checked{
+    padding: 0 30px;
+}
+
+.conteudo-menu .cabecalho .entrar .modal .container a{
+    color: #000;
+    text-decoration: underline;
+}
+
+.conteudo-menu .cabecalho .entrar .modal .container a:hover{
+    color: #F1C40F;
+}
+
+  
+  /* The Modal (background) */
+.conteudo-menu .cabecalho .entrar .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+    z-index: 3;
+}
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button (x) */
+  .conteudo-menu .cabecalho .entrar .modal .imgcontainer .close {
+    position: absolute;
+    right: 25px;
+    top: -15px;
+    color: #f44336;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  .conteudo-menu .cabecalho .entrar .modal .imgcontainer .close:hover,
+  .conteudo-menu .cabecalho .entrar .modal .imgcontainer .close:focus {
+    color: #000;
+    cursor: pointer;
+  }
+
+
+  
+  /* Add Zoom Animation */
+  .animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+  }
+  
+  @-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+  }
+    
+  @keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+  }
+  
+  /* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+}
+
+/* PÁGINA CRIAR-CONTA */
+
+.criar-conta{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    margin-top: 40px;
+}
+.criar-conta .formulario-criar-conta label{
+    font-size: 15px;
+    font-family: 'Noto Sans';
+}
+
+.criar-conta .formulario-criar-conta input{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box; 
+}
+
+.criar-conta .formulario-criar-conta .criar-conta button{
+    width: 50%;
+    background-color: #000;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    font-family: 'Noto Sans';
+    margin: -35px -12px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+
+a{  
+    color: #000;
+}
+
+@media(min-width:992px){
+    .conteudo-menu .cabecalho .entrar .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+        padding-top: 60px;
+        z-index: 2;
+    }
+    .container{
+        margin-left: 17px;
+    }
+
+    /* PÁGINA CRIAR-CONTA.HTML */
+
+    #container-criar-conta{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .criar-conta{
+        width: 50%;
+    }
+
+} 
+
+
+@media(min-width:1200px){
+    .conteudo-menu .cabecalho .entrar .modal{
+        left:595px;
+        width: 50%; 
+        height: auto; 
+    }
+}
+

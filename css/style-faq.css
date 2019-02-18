@@ -1,0 +1,384 @@
+
+.sobre-empresa{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.sobre-empresa h1{
+    font-size: 30px;
+    font-weight: bold;
+    padding: 100px 0 60px;
+    font-family: 'Lobster';
+    text-align: center;
+}
+
+.sobre-empresa h3{
+    font-size: 22px;
+    padding: 10px 20px;
+    font-family: 'Noto Sans';
+    line-height: 40px;
+
+}
+
+.sobre-empresa .texto{
+    font-size: 20px;
+    padding: 10px 20px;
+    font-family: 'Noto Sans';
+    line-height: 40px;
+}
+
+.sobre-empresa .texto-bold{
+    font-size: 20px;
+    padding: 30px 20px;
+    font-weight: bold;
+    font-family: 'Noto Sans';
+    line-height: 40px;
+}
+
+.sobre-empresa .texto-bold-italic{
+    font-size: 20px;
+    padding: 30px 20px;
+    font-weight: bold;
+    font-style: italic;
+    font-family: 'Noto Sans';
+    line-height: 40px;
+}
+
+.sobre-empresa .destaque-texto{
+    font-weight: bold;
+}
+
+
+.sobre-empresa .pergunta{
+    font-size: 20px;
+    padding: 0 20px;
+    font-family: 'Noto Sans';
+    font-weight: bold;
+    line-height: 40px;
+}
+
+.sobre-empresa .resposta{
+    font-size: 18px;
+    padding: 0 20px;
+    font-family: 'Noto Sans';
+    line-height: 40px;
+}
+
+.sobre-empresa .link-creditos{
+    text-align: right;
+    font-size: 20px;
+    font-family: 'Noto Sans';
+
+}
+
+.sobre-empresa .link-creditos a{
+    text-decoration: underline;
+    text-decoration-color: ##F1C40F;
+    -webkit-text-decoration-color: ##F1C40F; /* Safari */ 
+
+}
+
+.sobre-empresa img{
+    width: 100%;
+    height: auto;
+    padding: 40px 0;
+}
+
+.moda-sustentavel{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+
+.moda-sustentavel .link-creditos a{
+    text-align: right;
+    color: #ffffff;
+    text-decoration: underline;  
+    text-decoration-color: ##F1C40F;
+    -webkit-text-decoration-color: ##F1C40F; /* Safari */
+}
+
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #000;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+  }
+
+
+.moda-sustentavel:hover .overlay {
+    height: 100%;
+    overflow-y: scroll;
+}
+
+
+ .text {
+    color: white;
+    font-size: 20px;
+    font-family: 'Noto Sans';
+    position: absolute;
+    top: 50%;
+    left: 51%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 99%;
+    line-height: 30px;
+    height: 90%;
+  }
+
+  .moda-sustentavel input{
+    padding: 10px 30px;
+  }
+
+
+  .scrollTop {
+    width: 60px;
+    right: 10%;
+    bottom: 10px;
+    background-color: #BE3F48;
+    padding: 20px;
+    opacity: 0;
+    transition: all 0.4s ease-in-out 0s;
+    }
+    
+    .scrollTop a {
+    font-size: 18px;
+    color: #fff;
+    }
+
+    .menuleft{
+        display: none;
+    }
+
+    .sobre-empresa .contato{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+        flex-wrap: wrap;
+     }
+
+    .sobre-empresa .contato img{
+       width: 50px;
+       padding: 0;
+    }
+
+    .sobre-empresa .contato a:hover{
+        color: #F1C40F;
+     }
+
+
+  @media(min-width:576px){
+      
+  }
+
+  @media(min-width: 768px){
+    .sobre-empresa img{
+        width: 60%;
+        height: auto;
+    }
+
+    .sobre-empresa .foto{
+        text-align: center;
+    }
+
+
+
+  }
+
+  @media(min-width: 992px){
+
+    .sobre-empresa{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 80%;
+    }
+    .sobre-empresa .texto-bold{
+        font-size: 18px;
+    }
+
+    .sobre-empresa .texto-bold-italic{
+        font-size: 18px;
+    }
+
+    .sobre-empresa .texto{
+        font-size: 18px;
+        width: 100%;
+    }
+
+ 
+
+
+    .moda-sustentavel input{
+        display: none;
+    } 
+
+    .image{
+        width: 70%;
+        height: auto;
+    }
+    .moda-sustentavel{
+        display: flex;
+        justify-content: center;
+    }
+    .overlay{
+        width: 100%;
+        left: 0;
+    }
+
+    .text{
+       height: 90%;
+    }
+
+
+    .menuleft,
+    .content-right {
+        float: left;
+        display: block;
+    }
+
+
+    .menuleft {
+        width: 200px;
+        padding: 10px;
+
+        right: 10%;
+        bottom: 10px;
+
+        transition: all 0.4s ease-in-out 0s;
+    }
+
+    .menuleft ul {
+        position: fixed;
+        display: block;
+        background-color: #F2F2F2;
+        padding: 0px;
+        margin-top: -250px;
+    }
+
+    .menuleft ul li {
+        list-style: none;
+        line-height: 30px;
+    }
+
+    .menuleft ul li a {
+        color: #000000;
+        display: block;
+        padding: 5px;
+        text-align: center;
+        text-decoration: none;
+        width: 160px;
+    }
+
+    .menuleft ul li a:hover {
+        background-color: #E4E4E4;
+    }
+
+    .content-right {
+        width: 80%;
+        padding: 10px;
+        float:right;
+    }
+
+    .content-right p {
+        margin-bottom: 40px;
+    }
+
+    footer {
+        clear: both;
+      }
+      
+      
+    /****************************************
+    IMPORTANT 
+    *****************************************/
+    
+    .scrollTop {
+    position: fixed;
+    right: 10%;
+    bottom: 10px;
+    background-color: #BE3F48;
+    padding: 20px;
+    opacity: 0;
+    transition: all 0.4s ease-in-out 0s;
+    }
+    
+    .scrollTop a {
+    font-size: 18px;
+    color: #fff;
+    }
+
+
+
+  }
+
+  @media(min-width: 1200px){
+    .box-sobre-mim{
+        display: flex;
+        width: 100%;
+    }
+
+    .sobre-empresa .foto{
+        padding: 0 50px;
+        width: 100%;
+    }
+
+    .sobre-empresa img{
+        width: 70%;
+        height: auto;   
+    }
+
+    .box-overlay{
+        display: flex;
+        justify-content: flex-start;
+        padding: 80px 0 80px;
+    }
+
+    .overlay{
+        width: 100%;
+        left: -10px;
+    }
+    
+    .image{
+        width: 100%;
+        height: auto;
+    }
+    
+    .text{
+        left: 54%;
+        width: 91%;
+        height: 94%;
+    }
+
+    .link-creditos {
+        color: #ffffff;
+    }
+
+    .content-right {
+        width: 80%;
+        padding: 10px;
+    }
+
+    .menuleft ul li a {
+        width: 190px;
+    }
+
+
+  }
