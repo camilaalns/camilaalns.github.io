@@ -1,7 +1,7 @@
 var galleryFeed = new Instafeed({
     get: "user",
     userId: 8539336352,
-    accessToken: "8539336352.1677ed0.beb087a7045247719f6e68608db5a39e",
+    accessToken: "8539336352.1677ed0.c66462dd1e924fe796b39fb36486a1c2",
     resolution: "standard_resolution",
     useHttp: "true",
     limit: 20,
