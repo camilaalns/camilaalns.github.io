@@ -1,10 +1,10 @@
 var galleryFeed = new Instafeed({
     get: "user",
     userId: 8539336352,
-    accessToken: "8539336352.f6eb4e7.d7c84f9d51b24a56a5637c2e111d7708",
+    accessToken:"8539336352.f6eb4e7.d7c84f9d51b24a56a5637c2e111d7708",
     resolution: "standard_resolution",
     useHttp: "true",
-    limit: 20,
+    limit: 15,
     template: 
       // '<a href="{{image}}">'+
         '<div class="img-featured-container">'+
